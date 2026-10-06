@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foxstudio"
+version = "0.1.0"
+description = "Offline reverse-engineering workflow for 3DMakerpro Fox scan outputs (JMStudio exports + direct UVC capture)"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "open3d>=0.17",
+    "opencv-python",
+    "trimesh",
+    "requests",
+    "PySide6",
+    "pyqtgraph",
+    "PyOpenGL",
+    "pyserial",
+]
+
+[project.optional-dependencies]
+windows = ["pygrabber"]
+
+[project.scripts]
+foxstudio = "foxstudio.cli:main"
+
+[project.gui-scripts]
+foxstudio-desktop = "foxstudio.gui.app:main"
+foxstudio-turntable = "foxstudio.gui.spin_control:main"
+
+[tool.setuptools.packages.find]
+include = ["foxstudio*"]

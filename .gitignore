@@ -1,0 +1,40 @@
+# Local/editor settings and generated files
+.claude/
+.env
+.env.*
+*.local
+*.log
+
+# Secrets and keys
+*.pem
+*.key
+*.crt
+*.cer
+*.pfx
+*.p12
+*.jks
+*.p8
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# Local app config
+.foxstudio/
+config.json
+secrets/
+
+# Python cache / build outputs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Packaging
+build/
+dist/
+*.egg-info/
