@@ -1,4 +1,6 @@
-# FoxStudio
+## FoxStudio
+
+#Exclaimer - this is a WIP not a polished product and was shared to help the community with their projects on request
 
 Offline reverse-engineering workflow for the **3DMakerpro Fox** on Windows and
 Linux. Everything runs locally; the only network feature is the optional
